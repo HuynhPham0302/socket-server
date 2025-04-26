@@ -8,7 +8,7 @@ const server = http.createServer((_, res) =>
 
 const io = new Server(server, {
   cors: {
-    origin: "https://collaborativedraw-4fd8lmt87-huynh-phams-projects.vercel.app",
+    origin: "https://collaborativedraw.vercel.app/",
     methods: ["GET", "POST"]
   },
 });
