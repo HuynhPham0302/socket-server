@@ -74,7 +74,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 
 console.log("🧪 process.env.PORT =", process.env.PORT);
 server.listen(PORT, () => {
