@@ -8,7 +8,7 @@ const server = http.createServer((_, res) =>
 
 const io = new Server(server, {
   cors: {
-    origin: "https://collaborativedraw.vercel.app/",
+    origin: "https://collaborativedraw.vercel.app",
     methods: ["GET", "POST"]
   },
 });
@@ -74,7 +74,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 console.log("🧪 process.env.PORT =", process.env.PORT);
 server.listen(PORT, () => {
